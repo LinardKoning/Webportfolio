@@ -22,18 +22,18 @@
 
 	<body>
 		<div id="header">
-			<h1>Webportfolio</h1>
+			<img src="../img/lklogo.png">
 		</div>
 	
-		<div id="navbar">
-		  <a href="../index.html">Home</a>
-		  <a href="aboutme.html">About me</a>
-		  <a href="projecten.php">Projecten</a>
-		  <a href="contact.html">Contact</a>
-		  
+		<div id="navph">
+			<div id="navbar">
+			  <a href="../index.html">Home</a>
+			  <a href="aboutme.html">About me</a>
+			  <a href="projecten.php">Projecten</a>
+			  <a href="contact.html">Contact</a>
+			</div>
 		</div>
-			
-		<!--<div id="main">-->
+
 			<div id="cwrapper">
 				<div id="prlist">
 					<div id="prtext">
@@ -53,12 +53,11 @@
 				</div>
 				
 			</div>
-			
-		<!--</div>-->
 
-
-		<div id="footerbar">
-			<p>Online WebPortofolio gemaakt door Linard Koning 	&#9400;2018</p>
+		<div id="footerph">
+			<div id="footerbar">
+				<p>Online WebPortofolio gemaakt door Linard Koning 	&#9400;2018</p>
+			</div>
 		</div>
 
 		<div id="footerend">

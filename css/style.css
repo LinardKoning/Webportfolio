@@ -1,19 +1,20 @@
+/* Reset padding and margin and setting standerd font*/
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	font-family: 'Playfair Display', serif;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	min-height: 100%;
 	overflow: auto;
 }
 
-/* main */
+/* Styling of text elements */
 #header {
 	width: 100%;
 	height: 150px;
-	background-image: url("../img/headerbg.png");
+	background-color: #FFF;
 	display: block;
 	background-size: cover;
 }
@@ -21,7 +22,7 @@ body {
 #header h1 {
 	position: relative;
 	margin-left: auto;
-	color: #CFD;
+	color: #366;
 	font-style: italic;
 	text-align: center;
 	padding-top: 10px;
@@ -31,7 +32,7 @@ body {
 
 #header h2 {
 	position: relative;
-	color: #CFD;
+	color: #366;
 	font-style: italic;
 	text-align: center;
 	font-size: 30px;
@@ -39,41 +40,15 @@ body {
 	text-shadow: 2px 2px #000;
 }
 
-/* Style the navbar */
+/* Navbar */
 #navbar {
 	overflow: hidden;
-	background-color: #333;
-	text-shadow: 2px 2px #000;
-}
-
-/* Navbar links */
-#navbar a {
-	float: left;
-	display: block;
-	width: 200px;
-	color: #CFD;
-	text-align: center;
-	padding: 8px;
-	text-decoration: none;
-	border-top: 5px solid #333;
-	border-bottom: 5px solid #333;
-	transition: 1s;
-}
-
-.active a {
-	color: #000;
-	background-color: #CFD;
-	border-top: 5px solid #000;
-	border-bottom: 5px solid #CFD;
-}
-
-#navbar a:hover {
-	color: #CFD;
 	background-color: #000;
-	border-top: 5px solid #CFD;
-	border-bottom: 5px solid #000;
+	text-shadow: 2px 2px #000;
+	height: 55px;
+	font-weight: 900;
 }
-	
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .fixednav {
 	position: fixed;
@@ -81,18 +56,58 @@ body {
 	width: 100%;
 }
 
-#main {
-	width: 100%;
-	background-color: #EEE;
+/*Used as placeholder so the content wont jump when navbar sticks*/
+#navph {
+	height: 55px;
+	display: block;
 }
 
+/* Styling for navbar buttons */
+#navbar a {
+	float: left;
+	display: block;
+	width: 200px;
+	height: 24.5px;
+	top: -5px;
+	color: #FFF;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	border-top: 5px solid #666;
+	border-bottom: 5px solid #000;
+	transition: 1s;
+}
+
+.active a {
+	color: #000;
+	background-color: #366;
+	border-top: 5px solid #366;
+	border-bottom: 5px solid #000;
+}
+
+#navbar a:hover {
+	color: #366;
+	background-color: #000;
+	border-top: 5px solid #366;
+	border-bottom: 5px solid #000;
+}
+
+/*Styling content section*/
 #cwrapper {
-	padding: 60px 150px 60px 150px;
+	padding: 60px 300px 60px 300px;
 	height: 100%;
 	background-color: #EEE;
 	overflow: hidden;
 }
 
+#landingbanner {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/headerbg.png);
+}
+
+/*Styling project list*/
 #prlist {
 	width: 900px;
 	height: 100%;
@@ -100,9 +115,8 @@ body {
 	float: left;
 }
 
-
 .projectpostwrap {
-	border-left: 15px solid #CFD;
+	border-left: 15px solid #366;
 	width: 850px;
 	height: 250px;
 	display: block;
@@ -133,17 +147,26 @@ body {
 	float: left;
 }
 
+/*Styling project selection section*/
 #prnav {
-	height: 100px;
-	width: 100px;
+	width: 250px;
+	height: 250px;
 	display: block;
-	background-color: #FF0;
-	max-width: 100px;
-	float: left;
-	margin-top: 100px;
+	background-color: #AAA;
+	padding: 10px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	overflow: hidden;
 
 }
 
+/*Styling project form*/
+
+
+
+/*Project form Succes/Error text*/
 .perror {
 	color: #F00;
 	padding-left: 250px;
@@ -152,20 +175,27 @@ body {
 /*Opmaak footer*/
 #footerbar {
     background-color: #333;
-	color: #CFD;
+	color: #366;
 	height: 20px;
 	text-align: center;
 	clear: both;
 }
 
-footerend {
-	clear: both;
+#footerend {
+	height: 300px;
 }
 
 #footerend a {
 	text-decoration: none;
 }
 
+/*Used to keep document height when footerbar gets repostioned */
+#footerph {
+	height: 20px;
+	display: block;
+}
+
+/*Used by JS to make footer sticky*/
 .fixedfooter {
     position: fixed;
 	bottom: 0;

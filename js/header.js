@@ -4,27 +4,27 @@ $(document).ready(function(){
 	$body = $('body')
 	$nav = $('#navbar');
 	$footer = $('#footerbar');
-	$footend = $('#footerend');
 
 	/*Variabele navY is gelijk aan de hoogte van #navbar*/
 	var navY = $nav.offset().top;
+	var navH = $nav.height();
 	var footY = $footer.offset().top;
 	var wpos, space;
 	/*Als de gescrolde afstand groter is dan navY voeg .fixednav class toe anders verwijder .fixednav class*/
 	$win.bind('scroll', function() { 
 	wpos = $win.scrollTop();
-		if (wpos > navY) {  
-			$nav.addClass('fixednav');  
+		if (wpos >= navY) {  
+			$nav.addClass('fixednav');
 		} 
 		else {  
-			$nav.removeClass('fixednav');    
+			$nav.removeClass('fixednav');
 		} 
 	});
 	
 	function h(e) {
     wpos = $win.scrollTop();
-    space = $win.height() - $footer.height() + 40;
-		if (wpos + space < footY) {
+    space = $win.height() - $footer.height();
+		if (wpos + space <= footY) {
 			$footer.addClass('fixedfooter');
 		} else {
 			$footer.removeClass('fixedfooter');

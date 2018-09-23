@@ -23,28 +23,24 @@
 	<body>
 	
 		<div id="header">
-			<h1>Webportfolio</h1>
+			<img src="../img/lklogo.png">
 		</div>
 	
-		<div id="navbar">
-		  <a href="../index.html">Home</a>
-		  <a href="aboutme.html">About me</a>
-		  <a href="projecten.php">Projecten</a>
-		  <a href="contact.html">Contact</a>
-		  
+		<div id="navph">
+			<div id="navbar">
+				<a href="../index.html">Home</a>
+				<a href="aboutme.html">About me</a>
+				<a href="projecten.php">Projecten</a>
+				<a href="contact.html">Contact</a>
+			</div>
 		</div>
 			
-		<div id="main">
-			<div id="cwrapper">
+		<div id="cwrapper">
 
-				<div>
+				<h3>Voeg project toe aan database</h3>
 
-					<h3>Voeg project toe aan database</h3>
+				<p>Hier kun je een project toevoegen aan de database. Het is de bedoeling dat je alle velden invult en de een zip bestand upload. Het plaatje kan .jpg en .png worden geupload.<br><br></p>
 
-					<p>Hier kun je een project toevoegen aan de database. Het is de bedoeling dat je alle velden invult en de een zip bestand upload. Het plaatje kan .jpg en .png worden geupload.<br><br></p>
-				
-				</div>
-				
 				<form method="GET">
 
 					<label for="pnaam">Project naam</label>
@@ -71,15 +67,16 @@
 					<input type="submit" value="Submit" name="submitproject">
 					
 				</form>
-					
-				</div>
 				
-					<?php formInput();?>
+				<?php formInput();?>
+
 		</div>
 
 
-		<div id="footerbar">
-			<p>Online WebPortofolio gemaakt door Linard Koning 	&#9400;2018</p>
+		<div id="footerph">
+			<div id="footerbar">
+				<p>Online WebPortofolio gemaakt door Linard Koning 	&#9400;2018</p>
+			</div>
 		</div>
 
 		<div id="footerend">
